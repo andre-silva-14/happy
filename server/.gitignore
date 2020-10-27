@@ -11,6 +11,10 @@
 # database
 *.sqlite
 
+# media
+/uploads/*
+!/uploads/.gitkeep
+
 # production
 /build
 
