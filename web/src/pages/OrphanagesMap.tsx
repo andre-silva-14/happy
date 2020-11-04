@@ -14,11 +14,6 @@ interface Orphanage {
     name: string;
     latitude: number;
     longitude: number;
-    // about: string;
-    // instructions: string;
-    // opening_hours: string;
-    // open_on_weekends: boolean;
-    // images: Image[];
 }
 
 function OrphanagesMap() {
@@ -52,7 +47,7 @@ function OrphanagesMap() {
                 style={{ width: '100%', height: '100%'}}
             >
                 {/* <TileLayer url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png"/> */}
-                <TileLayer 
+                <TileLayer
                     url={`https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}
                 />
 
@@ -74,7 +69,7 @@ function OrphanagesMap() {
                                     <FiArrowRight size={20} color="#FFF"/>
                                 </Link>
                             </Popup>
-                            
+
                         </Marker>
                     )
                 })}

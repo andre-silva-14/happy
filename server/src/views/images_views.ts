@@ -4,7 +4,7 @@ import host from '../config/host';
 export default {
     render(image: Image) {
         return {
-            name: image.id,
+            id: image.id,
             url: `${host.baseUrl}uploads/${image.path}`,
         };
     },
